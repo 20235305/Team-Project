@@ -1,0 +1,822 @@
+/* I used this link to help me set the background image https://www.youtube.com/watch?v=vimZLEd702Y&ab_channel=CemEygiMedia */
+
+*{ /* In CSS, the asterisk selects all items in a html file, it is also know as the CSS universal selector */
+  margin: 0; /* margin is used to create space around elements */
+  padding: 0; /* also used to create space around elements */
+  font-family: sans-serif;
+  
+}
+
+.background-image{
+  height: 100%; 
+  width: 100%;
+  background-image: url(images/foodieBackground.jpg);
+  background-position: center;
+  background-size: cover; /* covers the screen */
+  position: fixed; /* fixed means it always stays in the same place even when the page is scrolled */
+}
+
+.html {  
+  scroll-behavior: smooth;  /* this specifies wether to smoothly scroll or do a straight jump */
+}
+
+.form-box{
+  width: 380px;
+  height: 545px; 
+  position: relative;
+  margin: 15px auto; /* it was on 6% auto */
+  /* margin-top: 5px; */
+  background: white;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.button-box{
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #fa5c1d1f;
+  border-radius: 30px;
+}
+
+.toggle-btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+#btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border-radius: 30px;
+  transition: .5s;
+}
+
+/* for targetting elements in css, if it's a class we use a full stop, if it's an we use a #. */
+
+.input-group{
+  top: 100px;
+  position:absolute;
+  width: 280px;
+  transition: .5s;
+  /* margin-top: 50px; */
+}
+
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+  margin-top: -2px;
+}
+
+.submit-btn{
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.check-box{
+  margin: 30px 10px 30px 0;
+}
+
+span{
+  color: #777;
+  font-size: 12px;
+  bottom: 68px;
+  position:absolute;
+}
+
+#login{
+  left: 50px;
+}
+
+#register{
+  left: 450px;
+}
+
+#register{
+  left: 450px;
+}
+
+#chef{
+  margin-left: 40px;
+}
+
+#gender{
+  margin-left: 54px;
+}
+
+.rectangle{
+  width:1000px;
+  height:100vh; /* vh sets the viewpoint*/
+  background-color:rgb(241, 239, 239);
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  }
+
+  /* https://www.w3schools.com/howto/howto_css_style_header.asp this link was used to help with the header */
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  color: rgb(212, 206, 206);
+  /* font-size: 30px; */
+}
+
+/* This link was used to help with the search bar https://www.w3schools.com/howto/howto_css_searchbar.asp */
+
+.topnav input[type=text] {
+  float: left;
+  padding: 1px;
+  border: none;
+  margin-top: -2px;
+  margin-right: 16px;
+  font-size: 17px;
+  color: yellow;
+}
+
+.topnav{
+  margin-top: -10px;
+}
+
+.buttons{
+  text-align: right;
+ }
+
+.searchSymbol{
+  height: 20px;
+  width: 20px;
+  float: left;
+  padding:-2px;
+  margin-top: 0px;
+  /* margin-left: 10px; */
+}
+
+.searchBAR{
+  margin-top: -20px;
+}
+
+.uploadSymbol{
+  height: 15px;
+  width: 15px;
+  float: right;
+  padding:1px;
+  margin-right: 10px;
+}
+
+
+
+.noticationSymbol{
+  height: 15px;
+  width: 15px;
+  float: right;
+  padding:1px;
+ /*  margin-top: -25px; */
+ margin-right: 10px;
+}
+
+.chatSymbol{
+  height: 15px;
+  width: 15px;
+  float: right;
+  padding:1px;
+  /* margin-top: -25px; */
+  margin-right: 10px;
+}
+
+.userSymbol{
+  height: 15px;
+  width: 15px;
+  float:  right;
+  padding:1px;
+  /* margin-top: -25px; */
+}
+
+.homeBtn{
+  height: 15px;
+  width: 15px;
+  float:  right;
+  padding:1px;
+}
+
+.feed-box{
+    width: 380px;
+    height: 550px; 
+    position: relative;
+    margin: 15px auto; /* it was on 6% auto */
+    margin-top: 0px; 
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+    /* margin-top: 100px; */
+    top: 100px;
+    border-radius: 10px;
+  
+}
+
+.feedText{
+  margin-left: 307px;
+  margin-top: 25px;
+}
+
+.lasagnaPic{
+  /* I used this link https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container 
+  to fit the image into the div so that it wasn't cut up */
+  max-width: 100%; 
+  max-height: 100%;
+  margin-top: 20px;
+  
+}
+
+.pizzaPic{
+  max-width: 100%; 
+  max-height: 100%;
+  margin-top: 20px;
+}
+
+.userSymbol2{
+  height: 15px;
+  width: 15px;
+  float:  left;
+  margin-left: 10px;
+  margin-top: 10px; 
+  padding:1px;
+}
+
+.jSmithText{
+  margin-top: -25px;
+  margin-left: 40px;
+}
+
+.likeBtn{
+  height: 15px;
+  width: 15px;
+  float:  left;
+  margin-left: 10px;
+  margin-top: 10px; 
+  padding:1px
+}
+
+.likeBUTTON{
+  margin-top: -25px;
+  margin-left: 50px;
+}
+
+
+.commentSymbol{
+  height: 15px;
+  width: 15px;
+  float:  left;
+  margin-left: 10px;
+  margin-top: 10px; 
+  padding:1px
+}
+
+.commentBtn{
+  margin-left: 100px;
+  margin-top: -25px;
+  float: right;
+  margin-right: 250px;
+}
+
+.commentText{
+  margin-top: -18.9px;
+  margin-left: 150px;
+}
+
+.likedByBtn{
+  float: right;
+  margin-top: 6px;
+  margin-right: 65px;
+  font-size: 90%;
+}
+
+.comment1{
+  float: right;
+  margin-right: 70px;
+  margin-top: 5px;
+  border-width: 3px;
+  background-color: rgb(247, 242, 242);
+}
+
+.comment2{
+  float: right;
+  margin-right: 50px;
+  margin-top: 5px;
+  border-width: 3px;
+  background-color: rgb(247, 242, 242);
+}
+
+#comment-box{
+  width: 310px;
+  height: 25px;
+  border-radius: 20px;
+}
+
+#comment-box[type=text]{ 
+  padding-left: 10px;
+}
+
+#description-box{
+  width: 370px;
+  height: 25px;
+  border-radius: 20px;
+  background: transparent;
+  border: none;
+}
+
+#description-box[type=text]{
+padding-left: 10px;
+}
+
+.comment3{
+  float: right;
+  margin-right: 140px;
+  margin-top: 5px;
+  border-width: 3px;
+  background-color: rgb(247, 242, 242);
+}
+
+.comment4{
+  float: right;
+  margin-right: 85px;
+  margin-top: 5px;
+  border-width: 3px;
+  background-color: rgb(247, 242, 242);
+}
+
+.comment5{
+  float: right;
+  margin-right: 115px;
+  margin-top: 5px;
+  border-width: 3px;
+  background-color: rgb(247, 242, 242);
+}
+
+.comment6{
+  float: right;
+  margin-right: 149px;
+  margin-top: 5px;
+  border-width: 3px;
+  background-color: rgb(247, 242, 242);
+}
+
+.comment7{
+  float: right;
+  margin-right: 39px;
+  margin-top: 5px;
+  border-width: 3px;
+  background-color: rgb(247, 242, 242);
+}
+
+.comment8{
+  float: right;
+  margin-right: 90px;
+  margin-top: 5px;
+  border-width: 3px;
+  background-color: rgb(247, 242, 242);
+}
+
+.comment9{
+  float: right;
+  margin-right: 118px;
+  margin-top: 5px;
+  border-width: 3px;
+  background-color: rgb(247, 242, 242);
+}
+
+.comment10{
+  float: right;
+  margin-right: 60px;
+  margin-top: 5px;
+  border-width: 3px;
+  background-color: rgb(247, 242, 242);
+}
+
+.comment11{
+  float: right;
+  margin-right: 160px;
+  margin-top: 5px;
+  border-width: 3px;
+  background-color: rgb(247, 242, 242);
+}
+
+.fakeProfiler{
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin-left: 0px;
+}
+
+.ProfilerUserName{
+  margin-top: 200px;
+  margin-left: 40px;
+}
+
+.christinaPIC{
+  height: 25px;
+  width: 25x;
+  margin-top: 5px;
+}
+
+.postBtn{
+  height: 30px;
+  width: 380px;
+  float:  left;
+ margin-top: 10px; 
+  padding:1px
+}
+
+.userPost-box{
+  width: 380px;
+    height: 450px; 
+    position: relative;
+    margin: 15px auto; /* it was on 6% auto */
+    margin-top: 0px; 
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+    /* margin-top: 100px; */
+    top: 100px;
+    border-radius: 10px;
+}
+
+.notifications-box{ /* not in Paolos OneDrive stylesheet 31/03/2023 */
+  width: 640px;
+    height: 70px; 
+    position: relative;
+    margin: 10px auto; /* it was on 6% auto */
+    margin-top: 0px; 
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+    /* margin-top: 100px; */
+    top: 100px;
+    /* border-radius: 10px; */
+}
+
+.notifications-boxEND{ /* not in Paolos OneDrive stylesheet 31/03/2023 */
+  width: 680px;
+  height: 70px; 
+  position: relative;
+  margin: 10px auto; /* it was on 6% auto */
+  margin-top: 0px; 
+  /* background: white; */
+  padding: 5px;
+  overflow: hidden;
+  /* margin-top: 100px; */
+  top: 100px;
+  /* border-radius: 10px; */
+}
+
+.notificationsText{ /* not in Paolos OneDrive stylesheet 31/03/2023 */
+  margin-left: 180px;
+  margin-top: 25px;
+}
+
+.loadMoreActivitiesText{ /* not in Paolos OneDrive stylesheet 31/03/2023 */
+  margin-left: 280px;
+  margin-bottom: 0px;
+}
+
+.noticationSymbol2{ 
+  height: 15px;
+  width: 15px;
+  float: right;
+  margin-top: -16px;
+  margin-right: 710px;
+ }
+
+#followBtn{
+  height: 30px;
+  width: 90px;
+  float:  left;
+  margin-top: 10px; 
+  margin-left: 40px;
+  padding:1px;
+  background-color: rgb(199, 199, 252);
+}
+
+#loadMoreActivitiesBtn{ /* not in Paolos OneDrive stylesheet 31/03/2023 */
+  height: 50px;
+  width: 90px;
+  float:  left;
+  margin-top: 10px; 
+  margin-left: 290px;
+  padding:1px;
+  background-color: rgb(180, 180, 184);
+}
+
+#demo{
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+#deleteAccountBtn{ /* not in Paolos OneDrive stylesheet 31/03/2023 */
+  height: 40px;
+  width: 90px;
+  float:  left;
+  margin-top: 40px; 
+  margin-left: -90px;
+  padding:1px;
+  background-color: rgb(199, 199, 252);
+}
+
+#fakeUserPic1{ /* not in Paolos OneDrive stylesheet 31/03/2023 */
+  height: 85px;
+  width:165px;
+  margin-left: -50px;
+  margin-top: -5px;
+}
+
+/* not in Paolos OneDrive stylesheet 31/03/2023 */
+
+#fakeUserBtn1{
+  height: 70px;
+  width: 70px;
+}
+
+#fakeUserPic2{
+  height: 70px;
+  width:70px;
+}
+
+#fakeUserBtn2{
+  height: 70px;
+  width: 70px;
+}
+
+#fakeUserPic3{
+  height: 70px;
+  width:130px;
+  margin-left: -33px;
+  margin-top: 0px;
+}
+
+#fakeUserBtn3{
+  height: 70px;
+  width: 70px;
+}
+
+#fakeUserPic4{
+  height: 100px;
+  width:190px;
+  margin-left: -61px;
+  margin-top: -12px;
+}
+
+#fakeUserBtn4{
+  height: 70px;
+  width: 70px;
+}
+
+#fakeUserPic5{
+  height: 90px;
+  width:130px;
+  margin-left: -35px;
+  margin-top: -12px;
+}
+
+#fakeUserBtn5{
+  height: 70px;
+  width: 70px;
+}
+
+#fakeUserPic6{
+  height: 90px;
+  width:130px;
+  margin-left: -30px;
+  margin-top: -8px;
+}
+
+#fakeUserBtn6{
+  height: 70px;
+  width: 70px;
+}
+
+#fakeUserPic7{
+  height: 90px;
+  width:130px;
+  margin-left: -32px;
+  margin-top: -12px;
+}
+
+#fakeUserBtn7{
+  height: 70px;
+  width: 70px;
+}
+
+#notification-page-food-pics{ /* for notification page */
+  height: 60px;
+  width: 60px;
+  float: right;
+  margin-top: 0px;
+  margin-right: 3px;
+}
+
+#notificationsPosts{
+  height: 70px;
+  width: 70px;
+  float: right;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+#hiText{ /* text for notification page divs */
+  float: right;
+  margin-right: 270px;
+  margin-top: 5px;
+} 
+
+#hiText2{ /* text for notification page divs */
+  float: right;
+  margin-right: 250px;
+  margin-top: 5px;
+} 
+#hiText3{ /* text for notification page divs */
+  float: right;
+  margin-right: 250px;
+  margin-top: 5px;
+}
+
+#hiText4{ /* text for notification page divs */
+  float: right;
+  margin-right: 145px;
+  margin-top: 5px;
+}
+
+#hiText5{ /* text for notification page divs */
+  float: right;
+  margin-right: 215px;
+  margin-top: 5px;
+}
+
+#hiText6{ /* text for notification page divs */
+  float: right;
+  margin-right: 237px;
+  margin-top: 5px;
+}
+
+#hiText7{ /* text for notification page divs */
+  float: right;
+  margin-right: 188px;
+  margin-top: 5px;
+}
+
+.chat-box{ /* for chat page */
+  width: 640px;
+    height: 450px; 
+    position: relative;
+    margin: 10px auto; /* it was on 6% auto */
+    margin-top: 0px; 
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+    /* margin-top: 100px; */
+    top: 100px;
+    /* border-radius: 10px; */
+}
+
+.chatIconForChatPage{
+  height: 15px;
+  width: 15px;
+  float: right;
+  margin-top: -16px;
+  margin-right: 750px;
+ }
+
+.line{
+  width: 1px;
+  height: 100%;
+  margin-left: 170px;
+  background-color: rgb(234, 232, 232);
+  margin-top: -400px;
+}
+
+.searchBAR2{
+  margin-top: 20px;
+}
+
+#hiTextCHAT{ /* text for chat page */
+  float: right;
+  margin-right: 500px;
+  margin-top: 15px;
+  font-size: x-small;
+} 
+
+#hiTextCHAT2{ /* text for chat page */
+  float: right;
+  margin-right: 478px;
+  margin-top: 15px;
+  font-size: x-small;
+} 
+
+#hiTextCHAT3{ /* text for chat page */
+  float: right;
+  margin-right: 495px;
+  margin-top: 15px;
+  font-size: x-small;
+}
+
+#hiTextCHAT4{ /* text for chat page */
+  float: right;
+  margin-right: 485px;
+  margin-top: 15px;
+  font-size: x-small;
+}
+
+.blankProfilePic{
+  float: left;
+  height: 200px;
+  width: 400px;
+  margin-left: -100px;
+}
+
+#blankProfilePicBtn{
+  height: 200px;
+  width: 200px;
+  border-radius: 90px;
+  border-color: transparent;
+}
+
+.BlankUserName{
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+#addUserNameBtn{
+  height: 35px;
+  width: 150px;
+  float:  left;
+  margin-top: 10px; 
+  margin-left: 40px;
+  padding:1px;
+  background-color: rgb(199, 199, 252);
+}
+
+#demo{
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+
+.error {
+  background: #F2DEDE;
+  color: #A94442;
+  padding:  10p;
+  width: 95%;
+  border-radius: 5px;
+}
+
+
+/* not in Paolos OneDrive stylesheet 31/03/2023 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
